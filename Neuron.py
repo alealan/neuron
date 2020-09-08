@@ -16,12 +16,11 @@ class Neuron:
                 break
 
             else:
-                print(f'В {self.value} км {self.value / (self.value * self.weight)}'
-                      f' мили. Иттерация номер - {self.iter}')
+                print(f'Идем процесс обучения... Мы на {self.iter} итерации')
                 self.train()
 
         return (f'В {self.value} км {self.value / (self.value * self.weight)}'f' мили. '
-                f'Ответ найден на иттерации - {self.iter - 1}')
+                f'Ответ найден на итерации - {self.iter - 1}')
 
     def train(self):
         self.check = self.value / (self.value * self.weight)
