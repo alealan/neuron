@@ -16,7 +16,7 @@ class Neuron:
                 break
 
             else:
-                print(f'Идем процесс обучения... Мы на {self.iter} итерации')
+                print(f'Идет процесс обучения... Мы на {self.iter} итерации')
                 self.train()
 
         return (f'В {self.value} км {self.value / (self.value * self.weight)}'f' мили. '
